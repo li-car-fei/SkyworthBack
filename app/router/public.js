@@ -8,7 +8,7 @@ module.exports = app => {
     router.get('/api/index/overview', response, controller.public.get_overview);
 
     // 获取某项全部资源           用于获取修改数据时的选项
-    //router.get('/api/:resource', response, resource, controller.public.get_resource);
+    router.get('/api/:resource', response, resource, controller.public.get_resource);
 
     // 获取某项单个资源
     //router.get('/api/:resource/:id', response, resource, getId, controller.public.get_resource_id);

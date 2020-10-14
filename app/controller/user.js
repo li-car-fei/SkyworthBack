@@ -122,11 +122,18 @@ class UserController extends Controller {
     }
 
     /**
-     * @Summary 获取用户信息，全部或分页
-     * @Description 获取用户信息，全部或分页
+     * @Summary 获取用户信息，分页
+     * @Description 获取用户信息，分页
      * @Router get /api/index/user/pages/:page
-     * @Router get /api/index/user
      * @Request path string page 页数
+     * @Response 500 ErrResponse 获取失败，服务器错误
+     * @Response 200 UserListResponse 获取成功
+     */
+
+    /**
+     * @Summary 获取用户信息，全部不分页
+     * @Description 获取用户信息，全部不分页
+     * @Router get /api/index/user
      * @Response 500 ErrResponse 获取失败，服务器错误
      * @Response 200 UserListResponse 获取成功
      */
@@ -155,6 +162,15 @@ class UserController extends Controller {
      * @Response 500 ErrResponse 获取失败，服务器错误
      * @Response 200 UserDetailResponse 获取成功
      */
+
+    /**
+     * @Summary 获取当前用户的具体信息
+     * @Description 获取单个用户的具体信息，当前用户，扩展了team与project等
+     * @Router get /api/index/user/self
+     * @Response 401 StrResponse auth_token验错误
+     * @Response 500 ErrResponse 获取失败，服务器错误
+     * @Response 200 UserDetailResponse 获取成功
+     */
     async get_user_info() {
         const { ctx } = this;
         const { user } = ctx;
@@ -169,7 +185,6 @@ class UserController extends Controller {
      * @Summary 更新用户信息
      * @Description 更新信息，自已的或他人的
      * @Router put /api/index/user/:id
-     * @Router put /api/index/user/self
      * @Request header string authorization 识别用户的token
      * @Request path string id 用户id
      * @Response 401 StrResponse auth_token验错误
@@ -177,6 +192,16 @@ class UserController extends Controller {
      * @Response 403 MsgResponse 修改失败，等级不够
      * @Response 200 MsgResponse 修改成功
      */
+
+    /**
+    * @Summary 更新当前用户信息
+    * @Description 更新信息，自已
+    * @Router put /api/index/user/self
+    * @Request header string authorization 识别用户的token
+    * @Response 401 StrResponse auth_token验错误
+    * @Response 500 ErrResponse 修改失败，服务器错误
+    * @Response 200 MsgResponse 修改成功
+    */
     async update_user_info() {
         const { ctx } = this;
         const { user } = ctx;
@@ -236,6 +261,7 @@ class UserController extends Controller {
      * @Summary 邮箱验证
      * @Description 用户进行邮箱验证
      * @Router post /api/index/user/mail/:choose
+     * @Request path string choose 选择发送或者验证
      */
     async mailSet() {
         const { ctx } = this;

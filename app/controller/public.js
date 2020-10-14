@@ -6,11 +6,16 @@ const Controller = require('egg').Controller;
  * @Controller 公共接口
  */
 class MainController extends Controller {
-    // async get_resource() {
-    //     const { ctx } = this;
-    //     const data = await ctx.service.public.get_resource(ctx.Model);
-    //     ctx.body = data;
-    // }
+    /**
+     * @Summary 获取待审核用户数据
+     * @Description 懒得再写接口，先用通用接口代替着，凑合着用
+     * @Router get /api/checkuser
+     */
+    async get_resource() {
+        const { ctx } = this;
+        const data = await ctx.service.public.get_resource(ctx.Model);
+        ctx.body = data;
+    }
 
     // async get_resource_id() {
     //     const { ctx } = this;
