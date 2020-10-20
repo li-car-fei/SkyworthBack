@@ -14,12 +14,12 @@ module.exports = {
   },
 
   // 开启socket
-  io: {
-    enable: true,
-    package: 'egg-socket.io'
-  },
+  // io: {
+  //   enable: true,
+  //   package: 'egg-socket.io'
+  // },
 
-  // swaggerdoc 生成api文档
+  //swaggerdoc 生成api文档
   swaggerdoc: {
     enable: true,
     package: 'egg-swagger-doc'

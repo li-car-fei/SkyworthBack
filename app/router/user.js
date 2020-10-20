@@ -16,6 +16,9 @@ module.exports = app => {
     // 注册，先备份数据，等高level的用户确认才create一个user
     router.post('/api/sign', response, controller.user.sign);
 
+    // 获取需审核的用户数据
+    router.get('/api/index/check', auth, response, controller.user.get_check_user);
+
     // 审核，对注册备份数据进行审核通过
     router.post('/api/index/check/:id', auth, response, getId, controller.user.check_user_info);
 

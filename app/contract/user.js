@@ -212,7 +212,7 @@ module.exports = {
     UserImgResponse: {
         url: {
             type: 'string',
-            description: '上传后，获取头像的url'
+            description: '上传后，获取图片的url'
         },
     },
     TeamMemberOverview: {
@@ -236,5 +236,41 @@ module.exports = {
             type: 'string',
             description: '专业班级',
         },
+    },
+    checkUser: {
+        _id: {
+            type: 'string',
+            description: 'user的id'
+        },
+        username: {
+            type: "string",
+            description: '用户名',
+        },
+        name: {
+            type: "string",
+            description: '真实姓名'
+        },
+        sex: {
+            type: "string",
+            description: '性别',
+            example: '男',
+            enum: ['男', '女']
+        },
+        number: {
+            type: 'string',
+            description: '学号',
+            example: '201827382930',
+            match: /^201[89]\d{8}$/
+        },
+        profession: {
+            type: 'string',
+            description: '专业班级',
+        },
+        phone: {
+            type: 'string',
+            description: '手机号',
+            example: "135****8723",
+            format: /^1[3456789]\d{9}$/
+        }
     }
 }

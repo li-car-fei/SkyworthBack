@@ -5,7 +5,7 @@ module.exports = {
             description: '描述'
         },
         result: {
-            type: 'Object',
+            type: 'string',
             description: "返回结果",
         }
     },

@@ -11,11 +11,11 @@ class MainController extends Controller {
      * @Description 懒得再写接口，先用通用接口代替着，凑合着用
      * @Router get /api/checkuser
      */
-    async get_resource() {
-        const { ctx } = this;
-        const data = await ctx.service.public.get_resource(ctx.Model);
-        ctx.body = data;
-    }
+    // async get_resource() {
+    //     const { ctx } = this;
+    //     const data = await ctx.service.public.get_resource(ctx.Model);
+    //     ctx.body = data;
+    // }
 
     // async get_resource_id() {
     //     const { ctx } = this;

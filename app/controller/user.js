@@ -48,6 +48,28 @@ class UserController extends Controller {
     }
 
     /**
+    * @Summary 获取需审核的用户
+    * @Description 需审核的用户的信息
+    * @Router get /api/index/check
+    * @Request header string authorization 识别用户的token
+    * @Response 403 StrResponse 当前用户等级未达到可以获取信息的等级
+    * @Response 401 StrResponse auth_token验错误
+    * @Response 200 checkUser 获取成功
+    */
+    async get_check_user() {
+        const { ctx } = this;
+        const user = ctx.user;              // 当前用户
+        // 由审核人确定新建用户的level,同原注册数据一同post
+        if (user.level <= 2) {
+            ctx.body = '您无法进行审核操作';
+            ctx.status = 403;
+            return
+        }
+        const data = await ctx.service.public.get_resource(CheckUser);
+        ctx.body = data;
+    }
+
+    /**
      * @Summary 审核注册
      * @Description 审核注册并且添加
      * @Router post /api/index/check/:id
@@ -156,7 +178,6 @@ class UserController extends Controller {
      * @Summary 获取单个用户的具体信息
      * @Description 获取单个用户的具体信息，当前用户或者其他用户，扩展了team与project等
      * @Router get /api/index/user/:id
-     * @Router get /api/index/user/self
      * @Request path string id 用户id
      * @Response 401 StrResponse auth_token验错误
      * @Response 500 ErrResponse 获取失败，服务器错误
@@ -167,6 +188,7 @@ class UserController extends Controller {
      * @Summary 获取当前用户的具体信息
      * @Description 获取单个用户的具体信息，当前用户，扩展了team与project等
      * @Router get /api/index/user/self
+     * @Request header string authorization 识别用户的token
      * @Response 401 StrResponse auth_token验错误
      * @Response 500 ErrResponse 获取失败，服务器错误
      * @Response 200 UserDetailResponse 获取成功

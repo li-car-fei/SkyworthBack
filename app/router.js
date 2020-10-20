@@ -15,7 +15,10 @@ module.exports = app => {
   require('./router/project')(app);
   require('./router/message')(app);
   require('./router/public')(app);
+  require('./router/article')(app);
+  require('./router/userFav')(app);
+  require('./router/category')(app);
 
   // socket io
-  require('./router/io')(app);
+  //require('./router/io')(app);
 };

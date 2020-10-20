@@ -1,7 +1,8 @@
 const path = require('path');
 const fs = require('fs');
 const pump = require('mz-modules/pump');
-const baseUrl = 'http://127.0.0.1:7001/public';     // 基址
+//const baseUrl = 'http://120.78.195.215:7001/public';     // 基址
+const baseUrl = 'http://127.0.0.1:7001/public'
 const reg = new RegExp('.zip|.pdf|.docx', 'g');         // 格式的正则匹配
 
 module.exports = async function uploadFile(parts, file_first, catalog) {
