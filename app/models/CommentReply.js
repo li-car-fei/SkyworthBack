@@ -9,7 +9,8 @@ const schema = new mongoose.Schema({
     },
     replyType: {
         type: String,               // 回复类型，回复根评论或者回复他人的回复
-        enum: ['comment', 'reply']
+        enum: ['comment', 'reply'],
+        required: true
     },
     replyId: {              // 回复的id，如果回复类型是comment，则为空
         type: mongoose.SchemaTypes.ObjectId,

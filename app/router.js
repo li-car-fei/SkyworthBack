@@ -18,6 +18,7 @@ module.exports = app => {
   require('./router/article')(app);
   require('./router/userFav')(app);
   require('./router/category')(app);
+  require('./router/comment')(app);
 
   // socket io
   //require('./router/io')(app);
