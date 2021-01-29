@@ -25,4 +25,40 @@ module.exports = app => {
     // 删除一个project   level>2
     router.delete('/api/index/project/:id', auth, response, getId, controller.project.dele_project);
 
+    // 上传一个项目中间过程文件
+    router.post('/api/index/projectfile/:id', auth, response, getId, controller.project.post_projectFile);
+
+    // 获取某个项目中间过程文件信息
+    router.get('/api/index/projectfile/:id', auth, response, getId, controller.project.get_projectFile);
+
+    // 获取某个项目的某个中间过程文件信息
+    router.get('/api/index/projectfile/:id/:projectfileid', auth, response, getId, controller.project.get_projectFile_id)
+
+    // 上传一个项目新需求信息
+    router.post('/api/index/projectrequest/:id', auth, response, getId, controller.project.post_projectRequest);
+
+    // 获取某个项目新需求信息列表
+    router.get('/api/index/projectrequest/:id', auth, response, getId, controller.project.get_projectRequest);
+
+    // 获取某个项目的某条新需求
+    router.get('/api/index/projectrequest/:id/projectrequestid', auth, response, getId, controller.project.get_projectRequest_id);
+
+    // 新建一个项目图床目录
+    router.post('/api/index/projectcatalog/:id', auth, response, getId, controller.project.post_projectCatalog);
+
+    // 上传一张项目图床图片
+    router.post('/api/index/projectpicture/:id', auth, response, getId, controller.project.post_projectPicture);
+
+    // 获取一个项目的图床目录
+    router.get('/api/index/projectcatalog/:id', auth, response, getId, controller.project.get_projectCatalog);
+
+    // 删除图床目录
+    router.delete('/api/index/projectcatalog/:id', auth, response, getId, controller.project.del_projectCatalog);
+
+    // 获取一个图床目录下的图片地址
+    router.get('/api/index/projectpicture/:id', response, getId, controller.project.get_projectPicture);
+
+    // 删除图床图片
+    router.delete('/api/index/projectpicture/:id', auth, response, getId, controller.project.del_projectPicture);
+
 }

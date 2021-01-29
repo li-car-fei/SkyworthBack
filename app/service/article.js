@@ -42,7 +42,8 @@ class ArticleService extends Service {
         return await Article.find().where({
             isTop: true,
             isShow: true
-        }).select('author', 'title', 'summary', 'isTop', 'read', 'fav', 'categories')
+        })
+            .select('author title summary isTop read fav categories')
             .populate({
                 path: 'categories',
                 select: 'title'
@@ -57,7 +58,8 @@ class ArticleService extends Service {
     async get_article_pages(page) {
         const list = await Article.find().sort({
             'createdAt': -1
-        }).skip((page - 1) * 8).limit(8).select('author', 'title', 'summary', 'isTop', 'read', 'fav', 'categories')
+        }).skip((page - 1) * 8).limit(8)
+            .select('author title summary isTop read fav categories')
             .populate({
                 path: 'categories',
                 select: 'title'
@@ -77,7 +79,7 @@ class ArticleService extends Service {
 
     async get_article_category(category_id) {
         return await Article.find({ categories: category_id })
-            .select('author', 'title', 'summary', 'isTop', 'read', 'fav')
+            .select('author title summary isTop read fav')
             .populate({
                 path: 'author',
                 select: ['username', 'sex', 'profession', 'avator']

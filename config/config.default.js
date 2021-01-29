@@ -39,11 +39,11 @@ module.exports = appInfo => {
   };
 
   // 配置cors 解决跨域问题
-  config.cors = {
-    origin: '*', // 匹配规则  域名+端口  *则为全匹配
-    allowMethods: 'GET,HEAD,PUT,POST,DELETE,PATCH',
-    credentials: true,                 // 跨域共享cookies
-  };
+  // config.cors = {
+  //   origin: '*', // 匹配规则  域名+端口  *则为全匹配
+  //   allowMethods: 'GET,HEAD,PUT,POST,DELETE,PATCH',
+  //   credentials: true,                 // 跨域共享cookies
+  // };
 
   // 配置session，用于email验证
   config.session = {
@@ -115,15 +115,15 @@ module.exports = appInfo => {
   };
 
   // 配置alinode相关配置
-  config.alinode = {
-    server: 'wss://agentserver.node.aliyun.com:8080',
-    appid: '86330',
-    secret: '7d92c48d12d8144afa079e91ab7d7e2596a9adfa',
-    logdir: '/tmp/',
-    error_log: [
-    ],
-    //agentidMode: 'IP' '可选，如果设置，则在实例ID中添加部分IP信息，用于多个实例 hostname 相同的场景（以容器为主）'
-  };
+  //   config.alinode = {
+  //     server: 'wss://agentserver.node.aliyun.com:8080',
+  //     appid: '86330',
+  //     secret: '7d92c48d12d8144afa079e91ab7d7e2596a9adfa',
+  //     logdir: '/tmp/',
+  //     error_log: [
+  //     ],
+  //   agentidMode: 'IP' '可选，如果设置，则在实例ID中添加部分IP信息，用于多个实例 hostname 相同的场景（以容器为主）'
+  // };
 
   // config.cluster = {
   //   listen: {

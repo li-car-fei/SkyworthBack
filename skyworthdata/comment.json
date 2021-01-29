@@ -1,0 +1,19 @@
+[{
+  "_id": {
+    "$oid": "5efb3de3dae14d308869b06c"
+  },
+  "user": {
+    "$oid": "5f0e74d281a4cd139c062cfb"
+  },
+  "article": {
+    "$oid": "5efb3b8831a879423c8b78a5"
+  },
+  "content": "送达时间多久啊",
+  "createdAt": {
+    "$date": "2020-06-30T13:28:03.146Z"
+  },
+  "updatedAt": {
+    "$date": "2020-06-30T13:28:03.146Z"
+  },
+  "__v": 0
+}]

@@ -1,0 +1,16 @@
+[{
+  "_id": {
+    "$oid": "5f0db8dc0ee34b0e38b0fd9c"
+  },
+  "members": [
+    {
+      "$oid": "5f0d1367372f87292845e7a4"
+    },
+    {
+      "$oid": "5f0dbf738359d33b9871524c"
+    }
+  ],
+  "name": "前端小组",
+  "description": "balalaba前端小组的介绍在此急急急",
+  "__v": 0
+}]

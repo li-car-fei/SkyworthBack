@@ -14,9 +14,11 @@ module.exports = async function uploadFile(parts, file_first, catalog) {
         if (!stream.filename) {
             break;
         };
+        const ifCatalog = fs.existsSync('app/public' + catalog);
+        if (!ifCatalog) {
+            fs.mkdirSync('app/public' + catalog);
+        }
         let inner_file_first = file_first || String(path.basename(stream.filename)).replace(reg, '');
-        // let inner_file_first = file_first || ''
-        //console.log(inner_file_first)
         // 文件名为：定义的文件名头 + 随机字符串 +.文件后缀                     path.extname识别出filename中的 / 只要后面的.zip等格式名
         let filename = inner_file_first + '_' + Math.random().toString(36).substr(2) + path.extname(stream.filename).toLocaleLowerCase();
         let target = 'app/public' + catalog + '/' + filename;      // 存放地址

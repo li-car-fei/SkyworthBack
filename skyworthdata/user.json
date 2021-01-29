@@ -1,0 +1,193 @@
+[{
+  "_id": {
+    "$oid": "5f0d1367372f87292845e7a4"
+  },
+  "project_in": [
+    {
+      "$oid": "5f0dbaed0ee34b0e38b0fd9e"
+    },
+    {
+      "$oid": "5f314edb926ab83098c77143"
+    },
+    {
+      "$oid": "5f314f5f926ab83098c77144"
+    },
+    {
+      "$oid": "5f315b7de4eda81ff4f0f1f0"
+    },
+    {
+      "$oid": "5f315d356fc245099442ecfa"
+    },
+    {
+      "$oid": "5f420256879b363738c16cc2"
+    }
+  ],
+  "team_in": {
+    "$oid": "5f0db8dc0ee34b0e38b0fd9c"
+  },
+  "username": "laoma",
+  "password": "$2a$10$iIxVrM/96nPn2LU3QjAyyOQRPET763QPTwICLrvntYQXF4zoMBNau",
+  "level": 4,
+  "phone": "13672839281",
+  "createdAt": {
+    "$date": "2020-07-14T02:07:35.262Z"
+  },
+  "updatedAt": {
+    "$date": "2020-08-24T12:48:31.725Z"
+  },
+  "__v": 0,
+  "name": "李嘉慧",
+  "number": "201829382913",
+  "profession": "电科2班",
+  "sex": "男",
+  "avator": "http://127.0.0.1:7001/public/avator/laomagdx16xbdehq.png"
+},{
+  "_id": {
+    "$oid": "5f0dbf738359d33b9871524c"
+  },
+  "name": "马玉祥",
+  "project_in": [],
+  "username": "laoli",
+  "password": "$2a$10$PdoT9AcPiUEFlKZxp9BRQ.4j89/N.9tKyQ6/LtYfCXnXnwyNP9BXi",
+  "level": 2,
+  "phone": "13672839281",
+  "sex": "男",
+  "number": "201829382912",
+  "profession": "电科1班",
+  "createdAt": {
+    "$date": "2020-07-14T14:21:39.371Z"
+  },
+  "updatedAt": {
+    "$date": "2020-08-24T12:48:31.730Z"
+  },
+  "__v": 0,
+  "avator": "http://127.0.0.1:7001/public/avator/laoli_nio07ukwg6.jpg"
+},{
+  "_id": {
+    "$oid": "5f0e74b981a4cd139c062cf9"
+  },
+  "name": "叶鸿声",
+  "project_in": [],
+  "username": "lao",
+  "password": "$2a$10$h2nPuWdB09RwWPa4wt5FreRfImXhVzRlSvR7jVQ.UzHoVBrSYXfda",
+  "level": 4,
+  "phone": "13672839281",
+  "sex": "男",
+  "number": "201812345643",
+  "profession": "电科1班",
+  "createdAt": {
+    "$date": "2020-07-15T03:15:05.331Z"
+  },
+  "updatedAt": {
+    "$date": "2020-08-24T11:52:22.188Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f0e74d281a4cd139c062cfb"
+  },
+  "name": "hello",
+  "project_in": [
+    {
+      "$oid": "5f314edb926ab83098c77143"
+    },
+    {
+      "$oid": "5f8b114c921ea03c14ad4762"
+    }
+  ],
+  "username": "lao22",
+  "password": "$2a$10$Goolm8TXwbTZfBbT2zbc0en4XpJpY/fsG1Ku35Gbkx49wwCmPphEq",
+  "level": 3,
+  "phone": "13672839282",
+  "sex": "男",
+  "number": "201812345643",
+  "profession": "电科1班",
+  "createdAt": {
+    "$date": "2020-07-15T03:15:31.124Z"
+  },
+  "updatedAt": {
+    "$date": "2020-10-17T15:44:13.008Z"
+  },
+  "__v": 0,
+  "avator": "http://127.0.0.1:7001/public/avator/lao22_7x7hqxs04l5.jpeg"
+},{
+  "_id": {
+    "$oid": "5f0e750781a4cd139c062cfc"
+  },
+  "name": "hello11",
+  "project_in": [],
+  "username": "lao33",
+  "password": "$2a$10$.3nL5DXa63av.Q9vc4Zq2udKPl/nWlgVeGW1ODlx/fQd3MADAWbTW",
+  "level": 3,
+  "phone": "13672839282",
+  "sex": "女",
+  "number": "201845345643",
+  "profession": "电科4班",
+  "createdAt": {
+    "$date": "2020-07-15T03:16:23.446Z"
+  },
+  "updatedAt": {
+    "$date": "2020-07-15T03:16:23.446Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f0e751281a4cd139c062cfd"
+  },
+  "name": "hell",
+  "project_in": [],
+  "username": "lao44",
+  "password": "$2a$10$U8jUXZDxhSGxLEEDL98bgugZQOfMTADUYprQmAP0zHbHRDWU/umTu",
+  "level": 2,
+  "phone": "13672839282",
+  "sex": "女",
+  "number": "201845345643",
+  "profession": "电科4班",
+  "createdAt": {
+    "$date": "2020-07-15T03:16:34.996Z"
+  },
+  "updatedAt": {
+    "$date": "2020-07-15T03:16:34.996Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f0e752681a4cd139c062cfe"
+  },
+  "name": "hell22",
+  "project_in": [],
+  "username": "lao56",
+  "password": "$2a$10$dDtAtctj02oudDwBHxoUMuTeRRRXDnQoFRABIqdf0asoyQN/3kWxG",
+  "level": 1,
+  "phone": "13672349282",
+  "sex": "女",
+  "number": "201845345689",
+  "profession": "电科6班",
+  "createdAt": {
+    "$date": "2020-07-15T03:16:55.125Z"
+  },
+  "updatedAt": {
+    "$date": "2020-07-15T04:15:23.602Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f0e754181a4cd139c062d00"
+  },
+  "name": "hell2233",
+  "project_in": [],
+  "username": "lao78",
+  "password": "$2a$10$ZSt3YPDkCFjZalu/RhfiFeJDqXsL3ZbEkZzh5R0r4aGHfG/bmp6oO",
+  "level": 1,
+  "phone": "13672349282",
+  "sex": "男",
+  "number": "201845323451",
+  "profession": "电科6班",
+  "createdAt": {
+    "$date": "2020-07-15T03:17:21.620Z"
+  },
+  "updatedAt": {
+    "$date": "2020-07-15T03:17:21.620Z"
+  },
+  "__v": 0
+}]

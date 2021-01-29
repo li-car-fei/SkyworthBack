@@ -26,8 +26,8 @@ module.exports = {
   },
 
   // alinode 服务端配置
-  alinode: {
-    enable: true,
-    package: 'egg-alinode'
-  }
+  // alinode: {
+  //   enable: true,
+  //   package: 'egg-alinode'
+  // }
 };
