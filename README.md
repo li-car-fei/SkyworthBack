@@ -8,10 +8,10 @@ BackSystem for skyworth members
 ```bash
 $ npm i
 $ npm run dev
-$ open http://localhost:7001/
+$ open http://localhost:8001/
 
 线上根地址：
-http://120.78.195.215:7001/
+http://119.8.32.53:8001/
 ```
 
 执行`npm run dev`后可获取接口文档
@@ -20,10 +20,10 @@ http://120.78.195.215:7001/
 
 ```
 本地：
-http://localhost:7001/swagger-ui.html
+http://localhost:8001/swagger-ui.html
 
 线上：
-http://120.78.195.215:7001/swagger-ui.html#/
+http://119.8.32.53:7001/swagger-ui.html#/
 ```
 
 ### Deploy

@@ -24,10 +24,10 @@ module.exports = appInfo => {
   };
 
   // 生产环境基地址
-  config.production_baseUrl = 'http://127.0.0.1:7001';
+  config.production_baseUrl = 'http://127.0.0.1:8001';
 
   // 配置环境基地址
-  config.promotion_baseUrl = 'http://120.78.195.215:7001';
+  config.promotion_baseUrl = 'http://119.8.32.53:8001';
 
   // 先将csrf取消
   config.security = {
@@ -83,7 +83,7 @@ module.exports = appInfo => {
   config.swaggerdoc = {
     dirScanner: './app/controller',       //插件扫描的文档路径
     //basePath: 'http://127.0.0.1:7001',       // 前置路由
-    basePath: 'http://120.78.195.215:7001',
+    basePath: 'http://119.8.32.53:8001',
     apiInfo: {
       title: 'egg-swagger',
       description: 'swagger-ui for egg',
@@ -125,13 +125,12 @@ module.exports = appInfo => {
   //   agentidMode: 'IP' '可选，如果设置，则在实例ID中添加部分IP信息，用于多个实例 hostname 相同的场景（以容器为主）'
   // };
 
-  // config.cluster = {
-  //   listen: {
-  //     path: '',
-  //     port: 7001,
-  //     hostname: '120.78.195.215',
-  //   }
-  // };
+  config.cluster = {
+    listen: {
+      path: '',
+      port: 8001
+    }
+  };
 
   return {
     ...config,
