@@ -23,7 +23,7 @@ http://119.8.32.53:8001/
 http://localhost:8001/swagger-ui.html
 
 线上：
-http://119.8.32.53:7001/swagger-ui.html#/
+http://119.8.32.53:8001/swagger-ui.html#/
 ```
 
 ### Deploy
